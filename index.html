@@ -17,11 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header_container">
+        <!-- <div class="header_container"> -->
       <a class="logo" href="./index.html"><span>Web</span>Studio</a>
       <nav>
         <ul class="site_nav">
@@ -30,19 +34,25 @@
           <li><a href="/">Kontakt</a></li>
         </ul>
       </nav>
-        <ul class="contact">
-          <li><a href="/">info@example.com</a></li>
-          <li><a href="/">+48 111 111 111</a></li>
-        </ul>
+      <ul class="contact">
+        <li><a href="/">info@example.com</a></li>
+        <li><a href="/">+48 111 111 111</a></li>
+      </ul>
+      <!-- </div> -->
     </header>
-    <main>
+    <main class="container">
       <!-- 1rst -->
       <section class="title_section">
-        <h1 class="main_title">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU</h1>
-        <button class="main_button" type="button">Zamów usługe</button>
+        <h1 class="main_title">
+          EFEKTYWNE ROZWIĄZANIA <br />
+          DLA WASZEGO BIZNESU
+        </h1>
+        <button class="main_button" type="button">
+          Zamów usługe
+        </button>
       </section>
       <!-- 2nd -->
-      <section>
+      <section class="section">
         <ul class="paragraph_list">
           <li>
             <h3 class="paragraph_title">LOREM IPSUM</h3>
@@ -79,9 +89,9 @@
         </ul>
       </section>
       <!-- 3rd -->
-      <section>
+      <section class="section">
         <h2 class="title">Czym się zajmujemy</h2>
-        <ul>
+        <ul class="section3_container">
           <li>
             <img
               src="./images/img1.jpg"
@@ -109,9 +119,9 @@
         </ul>
       </section>
       <!-- 4rth -->
-      <section>
+      <section class="section">
         <h2 class="title">Nasz zespół</h2>
-        <ul>
+        <ul class="section4_container">
           <li>
             <figure>
               <img
@@ -171,13 +181,17 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="container">
+      <div class="footer_container">
         <a class="footer_logo" href="/"><span>Web</span>Studio</a>
-        <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <address class="address">
+          m. Warszawa, Aleje Jerozolimskie 21
+        </address>
         <ul class="footer_contact">
           <li><a href="/">info@example.com</a></li>
           <li><a href="/">+48 111 111 111</a></li>
         </ul>
+      </div>
     </footer>
   </body>
 </html>
