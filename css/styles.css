@@ -1,6 +1,16 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color);
+  /* width: 1600px; */
+}
+
+h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 :root {
@@ -11,15 +21,29 @@ body {
   --second-color: rgba(117, 117, 117, 1);
 }
 
-/* W treści zadania jest napisane że nie ma być innych 
-stylów globalnych dla elementów innych niż <body>, 
-więc w takim razie jak inaczej usunąć kropki ze 
-wszystkich list? */
-/* ul {
-     list-style-type: none;
-} */
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 215px;
+    box-sizing: border-box;
+}
+
+.section {
+    padding: 94px 0;
+}
 
 /* header */
+.header_container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 227px 0 215px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   color: var(--second-brand-color);
@@ -28,10 +52,20 @@ wszystkich list? */
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  width: 238px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .logo > span {
   color: var(--brand-color);
+}
+
+.site_nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 46px;
+  width: 628px;
 }
 
 .site_nav a {
@@ -45,6 +79,11 @@ wszystkich list? */
 .site_nav a:hover,
 .site_nav a:focus {
   color: var(--brand-color);
+} 
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 .contact a {
@@ -73,6 +112,8 @@ wszystkich list? */
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 200px;
+  margin-bottom: 30px;
 }
 
 .main_button {
@@ -90,6 +131,7 @@ wszystkich list? */
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  margin-bottom: 200px;
 }
 
 /* html 2nd section */
@@ -97,12 +139,16 @@ wszystkich list? */
 .paragraph_list {
   font-size: 14px;
   letter-spacing: 0.03em;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .paragraph_title {
   font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .paragraph {
@@ -118,6 +164,14 @@ wszystkich list? */
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+  
+.section3_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 /* html 4rth section */
@@ -125,20 +179,36 @@ wszystkich list? */
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  /* jak zrobić żeby tekst był w centrum obrazu?
-  text-align: center; */
+  text-align: center;
+  margin: 30px 0 30px;
 }
 
 .figure_description > h4 {
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
-.figuredescription > span {
+.figure_description > span {
   color: var(--second-color);
   font-weight: 400;
 }
 
+.section4_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section4_container figure {
+  margin: 0;
+}
+
 /* footer */
+.footer_container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .footer_logo {
   font-family: 'Raleway', sans-serif;
   color: var(--third-brand-color);
@@ -160,6 +230,8 @@ wszystkich list? */
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .footer_contact a {
@@ -171,6 +243,10 @@ wszystkich list? */
   letter-spacing: 0.03em;
 }
 
+.footer_contact li {
+margin-top: 9px;
+}
+
 .footer_contact a:hover,
 .footer_contact a:focus {
   color: var(--brand-color);
@@ -178,13 +254,12 @@ wszystkich list? */
 
 /* portfolio body*/
 /* portfolio 1rst section */
-.conteiner {
+.button {
   font-family: 'Roboto', sans-serif;
   background: rgba(245, 244, 250, 1);
   border-radius: 4px;
   height: 38px;
-  /* nie wiem skąd pojawia się czarny kolor przycisku
-  border-color: none;  */
+  border-color: transparent; 
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -192,13 +267,24 @@ wszystkich list? */
   cursor: pointer;
 }
 
-.conteiner:hover,
-.conteiner:focus {
+.button:hover,
+.button:focus {
   background: var(--brand-color);
   color: var(--third-brand-color);
 }
 
+.button_section {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+
+}
+
 /* portfolio 2nd section */
+.image_description {
+  margin: 20px 0;
+}
+
 .image_description > h3 {
   font-weight: 700;
   font-size: 18px;
@@ -212,4 +298,18 @@ wszystkich list? */
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-top: 4px;
+}
+
+.portfolio_section figure {
+  margin: 0;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+.portfolio_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 30px;
 }
