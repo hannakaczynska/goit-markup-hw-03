@@ -117,7 +117,6 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* margin-top: 200px; */
 }
 
 .main_button {
@@ -290,7 +289,6 @@ margin-top: 9px;
   display: flex;
   gap: 8px;
   justify-content: center;
-
 }
 
 /* portfolio*/
