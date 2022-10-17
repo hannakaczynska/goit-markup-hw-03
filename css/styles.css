@@ -27,13 +27,11 @@ ul {
 }
 
 .section {
-  /* width: 1600px; */
   padding: 94px 0;
 }
 
 /* header */
 .header_section {
-  /* width: 1600px; */
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -213,7 +211,6 @@ ul {
 
 /* footer */
 .footer_section {
-  /* width: 1600px; */
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--background-brand-color);
