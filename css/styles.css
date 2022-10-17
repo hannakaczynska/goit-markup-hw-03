@@ -23,19 +23,17 @@ ul {
 
 .container {
     width: 1200px;
-    padding: 0 15px;
-    margin: 0 215px;
-    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .section {
-  width: 1600px;
+  /* width: 1600px; */
   padding: 94px 0;
 }
 
 /* header */
 .header_section {
-  width: 1600px;
+  /* width: 1600px; */
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -159,7 +157,7 @@ ul {
   line-height: 1.71;
 }
 
-/* html 3rd section */
+/* html 3rd section - what we do*/
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -170,13 +168,13 @@ ul {
   margin-bottom: 50px;
 }
   
-.section3_container {
+.what_we_do ul {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
 
-/* html 4rth section */
+/* html 4rth section - about us*/
 .figure_description {
   font-size: 16px;
   line-height: 1.18;
@@ -199,15 +197,15 @@ ul {
   font-weight: 400;
 }
 
-.section4 {
+.about_us {
   background: rgba(245, 244, 250, 1);
 }
 
-.section4_container figure {
+.about_us figure {
   margin: 0;
 }
 
-.section4_container {
+.about_us ul {
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -215,7 +213,7 @@ ul {
 
 /* footer */
 .footer_section {
-  width: 1600px;
+  /* width: 1600px; */
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--background-brand-color);
