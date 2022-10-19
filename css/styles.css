@@ -102,6 +102,7 @@ ul {
   text-align: center;
   background-color: var(--background-brand-color);
   width: 1600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
 }
